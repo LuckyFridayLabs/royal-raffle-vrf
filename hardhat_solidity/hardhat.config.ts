@@ -36,6 +36,14 @@ const config: HardhatUserConfig = {
       url: process.env.MUMBAI_RPC_URL ?? '',
       accounts: [DEPLOYER_PRIVATE_KEY],
     },
+    shibuya: {
+      url: process.env.SHIBUYA_RPC_URL ?? '',
+      accounts: [DEPLOYER_PRIVATE_KEY],
+    },
+    astar: {
+      url: process.env.ASTAR_RPC_URL ?? '',
+      accounts: [DEPLOYER_PRIVATE_KEY],
+    }
   },
   etherscan: {
     apiKey: POLYGONSCAN_API_KEY,
